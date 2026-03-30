@@ -12,8 +12,8 @@ interface AuthModalProps {
 export function AuthModal({ isOpen, onClose }: AuthModalProps) {
   const [mode, setMode] = useState<'menu' | 'login' | 'register'>('menu')
 
-  const NEXPAY_LOGIN_URL = 'https://nexpay.nextrustx.com/login'
-  const NEXPAY_REGISTER_URL = 'https://nexpay.nextrustx.com/register'
+  const NEXPAY_LOGIN_URL = 'https://app.nexpay.digital/?auth=login'
+  const NEXPAY_REGISTER_URL = 'https://app.nexpay.digital/?auth=register'
   const WALLET_URL = 'https://wallet.nextrustx.com'
 
   const handleLogin = () => {
