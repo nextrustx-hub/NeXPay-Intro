@@ -53,7 +53,7 @@
       "name": "Acessar Conta",
       "short_name": "Login",
       "description": "Acessar sua conta NeXPay",
-      "url": "https://nexpay.nextrustx.com/login",
+      "url": "https://app.nexpay.digital/?auth=login",
       "icons": [{ "src": "/logo.png", "sizes": "512x512" }]
     },
     {
