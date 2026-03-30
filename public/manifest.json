@@ -1,0 +1,91 @@
+{
+  "name": "NeXPay - Ecossistema Financeiro Internacional",
+  "short_name": "NeXPay",
+  "description": "Carteira digital internacional para gestão de Crypto, BRL e EUR. Conta BLACK anónima sem KYC para fluxos internacionais.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "background_color": "#050505",
+  "theme_color": "#00d2ff",
+  "orientation": "portrait-primary",
+  "dir": "ltr",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.svg",
+      "sizes": "1200x630",
+      "type": "image/svg+xml",
+      "form_factor": "wide",
+      "label": "NeXPay - Interface Principal"
+    }
+  ],
+  "categories": ["finance", "utilities", "business"],
+  "shortcuts": [
+    {
+      "name": "NeX-AI Assistente",
+      "short_name": "NeX-AI",
+      "description": "Assistente virtual NeXPay",
+      "url": "/?action=nexai",
+      "icons": [{ "src": "/logo.png", "sizes": "512x512" }]
+    },
+    {
+      "name": "Acessar Conta",
+      "short_name": "Login",
+      "description": "Acessar sua conta NeXPay",
+      "url": "https://nexpay.nextrustx.com/login",
+      "icons": [{ "src": "/logo.png", "sizes": "512x512" }]
+    },
+    {
+      "name": "Conta BLACK",
+      "short_name": "BLACK",
+      "description": "Conta anónima sem KYC",
+      "url": "https://wallet.nextrustx.com",
+      "icons": [{ "src": "/logo.png", "sizes": "512x512" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "handle_links": "preferred",
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "share_target": {
+    "action": "/share",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+nexpay",
+      "url": "/?action=%s"
+    }
+  ]
+}

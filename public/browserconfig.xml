@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="/logo.png"/>
+            <square150x150logo src="/logo.png"/>
+            <square310x310logo src="/logo.png"/>
+            <TileColor>#00d2ff</TileColor>
+        </tile>
+        <notification>
+            <template>NeXPay</template>
+        </notification>
+    </msapplication>
+</browserconfig>
